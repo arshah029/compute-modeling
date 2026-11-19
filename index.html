@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Compute Demand</title>
+  <meta name="description" content="An open model of global compute demand, built from public filings and alternative data.">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='4' width='24' height='24' rx='5' fill='%232a78d6'/%3E%3Crect x='10' y='10' width='12' height='12' rx='2' fill='white'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#overview">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Global Compute Demand
+      </a>
+      <nav class="tabs" aria-label="Sections">
+        <a href="#overview" data-tab="overview">Overview</a>
+        <a href="#model" data-tab="model">Model</a>
+        <a href="#data" data-tab="data">Data</a>
+        <a href="#methodology" data-tab="methodology">Methodology</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="currentColor"/></svg></button>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="banner" id="placeholderBanner" hidden>
+      <strong>Preview data.</strong> Some or all numbers on this page are placeholders while the research dataset is being assembled.
+    </div>
+  </div>
+
+  <main class="wrap">
+    <!-- OVERVIEW -->
+    <section id="tab-overview" class="tab-panel" data-panel="overview">
+      <div class="hero">
+        <h1>How much compute does the world need?</h1>
+        <p class="lede">A transparent, source-linked model of global compute demand, built from hyperscaler filings, chip vendor results, energy data and alternative signals like construction pipelines.</p>
+      </div>
+      <div class="kpis" id="overviewKpis"></div>
+
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h2>Hyperscaler capital expenditure by quarter</h2>
+            <p class="sub">USD billions per calendar quarter, from 10-Q and 10-K cash flow statements.</p>
+          </div>
+          <button class="ghost" data-table-toggle="capexChart">Table</button>
+        </div>
+        <div class="chart-box"><canvas id="capexChart"></canvas></div>
+        <div class="table-view" id="capexChart-table" hidden></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h2>Explore the dataset</h2>
+            <p class="sub" id="explorerSub">Pick a category and metric.</p>
+          </div>
+          <div class="controls">
+            <label>Category <select id="explorerCategory"></select></label>
+            <label>Metric <select id="explorerMetric"></select></label>
+            <button class="ghost" data-table-toggle="explorerChart">Table</button>
+          </div>
+        </div>
+        <div class="chart-box"><canvas id="explorerChart"></canvas></div>
+        <div class="table-view" id="explorerChart-table" hidden></div>
+      </div>
+
+      <div class="card" id="gridCard">
+        <div class="card-head">
+          <div>
+            <h2>Power pipeline signals</h2>
+            <p class="sub">Gigawatts of data center demand showing up in utility filings, grid operators and leasing data. Latest value for each; these measure different stages (requests, contracts, construction), so read them side by side rather than adding them up.</p>
+          </div>
+          <button class="ghost" data-table-toggle="gridChart">Table</button>
+        </div>
+        <div class="chart-box tall"><canvas id="gridChart"></canvas></div>
+        <div class="table-view" id="gridChart-table" hidden></div>
+      </div>
+    </section>
+
+    <!-- MODEL -->
+    <section id="tab-model" class="tab-panel" data-panel="model" hidden>
+      <div class="hero small">
+        <h1>Demand model</h1>
+        <p class="lede">Move the drivers to see how AI capex turns into compute and power through 2030. At the Base setting the model matches the published research case; the shaded band is its low-to-high range and the dark markers are independent benchmarks (Epoch AI, IEA).</p>
+      </div>
+      <div class="model-layout">
+        <aside class="card drivers">
+          <div class="card-head tight">
+            <h2>Drivers</h2>
+          </div>
+          <div class="scenario-row" role="group" aria-label="Scenario">
+            <button data-scenario="low">Low</button>
+            <button data-scenario="base" class="active">Base</button>
+            <button data-scenario="high">High</button>
+          </div>
+          <div id="sliders"></div>
+          <button class="ghost wide" id="copyLink">Copy link to this scenario</button>
+        </aside>
+        <div class="model-results">
+          <div class="kpis" id="modelKpis"></div>
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <h2>AI data center power capacity</h2>
+                <p class="sub">Gigawatts. IT power is the chips and servers; facility power adds cooling and overhead (PUE).</p>
+              </div>
+              <button class="ghost" data-table-toggle="powerChart">Table</button>
+            </div>
+            <div class="chart-box"><canvas id="powerChart"></canvas></div>
+            <div class="table-view" id="powerChart-table" hidden></div>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <h2>AI data center electricity use</h2>
+                <p class="sub">Terawatt-hours per year. IEA markers are for all data centers, not just AI, for scale.</p>
+              </div>
+              <button class="ghost" data-table-toggle="energyChart">Table</button>
+            </div>
+            <div class="chart-box"><canvas id="energyChart"></canvas></div>
+            <div class="table-view" id="energyChart-table" hidden></div>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <h2>Installed AI compute</h2>
+                <p class="sub">Millions of H100-equivalents still in service, split by workload</p>
+              </div>
+              <button class="ghost" data-table-toggle="computeChart">Table</button>
+            </div>
+            <div class="chart-box"><canvas id="computeChart"></canvas></div>
+            <div class="table-view" id="computeChart-table" hidden></div>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <h2>AI compute added per year</h2>
+                <p class="sub">Millions of H100-equivalents. 2024 is a historical estimate; later years come from capex.</p>
+              </div>
+              <button class="ghost" data-table-toggle="shipChart">Table</button>
+            </div>
+            <div class="chart-box"><canvas id="shipChart"></canvas></div>
+            <div class="table-view" id="shipChart-table" hidden></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA -->
+    <section id="tab-data" class="tab-panel" data-panel="data" hidden>
+      <div class="hero small">
+        <h1>Data</h1>
+        <p class="lede">Every data point behind the site, with its source. Download the full set as <a href="data/observations.csv" download>CSV</a> or <a href="data/observations.json" download>JSON</a>.</p>
+      </div>
+      <div class="card">
+        <div class="controls filters">
+          <label>Category <select id="dataCategory"><option value="">All</option></select></label>
+          <label class="grow">Search <input id="dataSearch" type="search" placeholder="Entity, metric, source…"></label>
+          <span class="count" id="dataCount"></span>
+        </div>
+        <div class="table-scroll">
+          <table class="data-table" id="dataTable">
+            <thead><tr><th>Category</th><th>Metric</th><th>Entity</th><th>Period</th><th class="num">Value</th><th>Unit</th><th>Source</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Sources</h2>
+        <ul class="sources" id="sourcesList"></ul>
+      </div>
+    </section>
+
+    <!-- METHODOLOGY -->
+    <section id="tab-methodology" class="tab-panel" data-panel="methodology" hidden>
+      <article class="card prose" id="methodologyBody"></article>
+      <article class="card prose">
+        <h2>Model formulas</h2>
+        <p>The interactive model runs these steps every time a slider moves, so its Base setting reproduces the published research case.</p>
+        <ol id="formulaList"></ol>
+        <p>Low and High apply the research scenarios from <code>data/model.json</code>.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer">
+    <span id="footerUpdated"></span>
+    <span>Built from public filings and alternative data. Not investment advice.</span>
+  </footer>
+
+  <script src="assets/vendor/chart.umd.js"></script>
+  <script src="assets/vendor/marked.min.js"></script>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

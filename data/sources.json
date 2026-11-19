@@ -1,0 +1,354 @@
+[
+ {
+  "source_id": "msft_10q_2026q3",
+  "name": "Microsoft 10-Q, quarter ended 2026-09-30 (FY27 Q1)",
+  "publisher": "Microsoft / SEC EDGAR",
+  "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+  "type": "filing",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "msft_call_fy27q1",
+  "name": "Microsoft FY27 Q1 earnings call (2026-10-28)",
+  "publisher": "Microsoft",
+  "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1",
+  "type": "earnings_call",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "googl_10q_2026q3",
+  "name": "Alphabet 10-Q, quarter ended 2026-09-30",
+  "publisher": "Alphabet / SEC EDGAR",
+  "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+  "type": "filing",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "googl_call_2026q3",
+  "name": "Alphabet Q3 2026 earnings call (2026-10-28)",
+  "publisher": "Alphabet",
+  "url": "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/default.aspx",
+  "type": "earnings_call",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "amzn_10q_2026q3",
+  "name": "Amazon 10-Q, quarter ended 2026-09-30",
+  "publisher": "Amazon / SEC EDGAR",
+  "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+  "type": "filing",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "amzn_pr_2026q3",
+  "name": "Amazon Q3 2026 earnings release (2026-10-29)",
+  "publisher": "Amazon / SEC EDGAR",
+  "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
+  "type": "filing",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "meta_10q_2026q3",
+  "name": "Meta 10-Q, quarter ended 2026-09-30",
+  "publisher": "Meta / SEC EDGAR",
+  "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+  "type": "filing",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "meta_pr_2026q3",
+  "name": "Meta Q3 2026 earnings release",
+  "publisher": "Meta / SEC EDGAR",
+  "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm",
+  "type": "filing",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "orcl_10q_fy27q1",
+  "name": "Oracle 10-Q, quarter ended 2026-08-31 (FY27 Q1)",
+  "publisher": "Oracle / SEC EDGAR",
+  "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+  "type": "filing",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "orcl_fy27_guide",
+  "name": "Reuters via The Star: Oracle FY26 Q4 results and FY27 capex outlook (2026-06-11)",
+  "publisher": "Reuters",
+  "url": "https://www.thestar.com.my/tech/tech-news/2026/06/11/oracle-beats-fourth-quarter-revenue-estimates-amid-ai-spending-worries",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "capex_tracker",
+  "name": "AI Capex Tracker: hyperscaler capex by quarter (compiled from 10-Q/10-K cash flow statements)",
+  "publisher": "Walnut Invest",
+  "url": "https://walnutinvest.com/stats/ai-capex-statistics",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "uao_q3_capex",
+  "name": "Hyperscaler Q3 capex, debt, equity and leases",
+  "publisher": "Universal Asset Owners",
+  "url": "https://www.universalassetowners.com/newsroom/hyperscaler-q3-capex-debt-equity-leases/",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "nvda_call_fy27q3",
+  "name": "NVIDIA Q3 FY2027 earnings call transcript (2026-11-17)",
+  "publisher": "Investing.com",
+  "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-nvidia-tops-q3-2026-estimates-and-lifts-outlook-93CH-5034300",
+  "type": "earnings_call",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "nvda_tc_fy27q3",
+  "name": "Nvidia promises that revenue will keep soaring (2026-11-17)",
+  "publisher": "TechCrunch",
+  "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "nvda_fy27q2",
+  "name": "Nvidia posts $96.2B quarter as data center revenue hits $89B (2026-08-26)",
+  "publisher": "Unite.AI",
+  "url": "https://www.unite.ai/nvidia-posts-96-2b-quarter-as-data-center-revenue-hits-89b/",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "nvda_fy26q3",
+  "name": "Nvidia's Q3 data center sales soar 56% (FY2026 Q3)",
+  "publisher": "Zacks",
+  "url": "https://www.zacks.com/stock/news/2798118/nvidias-q3-data-center-sales-soar-56-can-nvda-sustain-the-momentum",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "nvda_ir",
+  "name": "NVIDIA quarterly results (investor relations; FY2025 and FY2026 data center revenue)",
+  "publisher": "NVIDIA",
+  "url": "https://investor.nvidia.com/financial-info/quarterly-results/default.aspx",
+  "type": "filing",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "amd_8k_2026q3",
+  "name": "AMD Q3 2026 earnings release, Form 8-K Ex.99.1 (2026-11-03)",
+  "publisher": "AMD / SEC EDGAR",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+  "type": "filing",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "tsmc_2026q3",
+  "name": "TSMC Q3 FY2026 earnings beat and raise on AI and HPC demand (2026-10-20)",
+  "publisher": "Futurum Group",
+  "url": "https://futurumgroup.com/insights/tsmc-q3-fy-2026-earnings-beat-and-raise-on-ai-and-hpc-demand/",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "tencent_2026q1",
+  "name": "Tencent and Alibaba accelerate AI spending (2026-05-15)",
+  "publisher": "GMT8 Press",
+  "url": "https://gmt8press.com/content/detail/390099",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "epoch_additions",
+  "name": "AI computing capacity additions are doubling every 9 months (data to 2026-10-19)",
+  "publisher": "Epoch AI",
+  "url": "https://epoch.ai/data-insights/ai-computing-capacity-additions-doubling",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "epoch_chip_owners",
+  "name": "AI Chip Owners / Users explorer (15M+ H100e, >10 GW; 2026-01-08)",
+  "publisher": "Epoch AI via The Decoder",
+  "url": "https://the-decoder.com/global-ai-compute-hits-15-million-h100-equivalents-epoch-ai-finds/",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "iea_energy_ai",
+  "name": "Energy and AI: Energy demand from AI",
+  "publisher": "International Energy Agency",
+  "url": "https://iea.org/reports/energy-and-ai/energy-demand-from-ai",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "lbnl_2024",
+  "name": "2024 United States Data Center Energy Usage Report (Berkeley Lab / DOE)",
+  "publisher": "Lawrence Berkeley National Laboratory",
+  "url": "https://energyanalysis.lbl.gov/news/berkeley-lab-report-evaluates-increase-electricity-demand-data-centers",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "pjm_2026_forecast",
+  "name": "PJM 2026 long-term load forecast (released 2026-01-14)",
+  "publisher": "PJM Interconnection",
+  "url": "https://insidelines.pjm.com/pjms-updated-20-year-forecast-continues-to-see-significant-long-term-load-growth/",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "ercot_large_load",
+  "name": "ERCOT large-load requests climb to 438 GW (ERCOT data 2026-05-24)",
+  "publisher": "New Project Media",
+  "url": "https://newprojectmedia.com/origination-ercot-large-load-requests-climb-to-438-gw-17-new-gas-generation-filings-in-last-60-days/",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "jll_na_h1_2026",
+  "name": "JLL North America Data Center Report, Midyear 2026 (2026-08-11)",
+  "publisher": "JLL",
+  "url": "https://www.jll.com/en-us/newsroom/data-center-demand-exceeds-expectations-in-h1-2026",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "nvidia_specs",
+  "name": "NVIDIA DGX H100 / DGX B200 / GB300 NVL72 published system power and FLOPs specs",
+  "publisher": "NVIDIA",
+  "url": "https://www.nvidia.com/en-us/data-center/dgx-b200/",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "twn_mof_2026_10",
+  "name": "Taiwan's October exports hit high, jump nearly 60% on AI demand (Ministry of Finance data, 2026-11-09)",
+  "publisher": "Focus Taiwan / CNA",
+  "url": "https://focustaiwan.tw/business/202611090020",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "twn_mof_2026_06",
+  "name": "Taiwan June 2026 exports (Ministry of Finance data, 2026-07-10)",
+  "publisher": "Taipei Times",
+  "url": "https://www.taipeitimes.com/News/biz/archives/2026/07/10/2003860490",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "kor_motir_2026_10",
+  "name": "Korea's monthly exports hit $115.3 bil. in Oct. on record chip sales (MOTIR data, 2026-11-01)",
+  "publisher": "Korea Times",
+  "url": "https://www.koreatimes.co.kr/economy/20261101/koreas-monthly-exports-hit-1153-bil-in-oct-on-record-chip-sales",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "mex_banamex_servers",
+  "name": "Mexico moves past Taiwan as top AI server exporter to the US (Banamex analysis of US import data)",
+  "publisher": "Mexico News Daily",
+  "url": "https://mexiconewsdaily.com/business/mexico-moves-past-taiwan-as-top-ai-server-exporter-to-united-states/",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "fed_ai_trade",
+  "name": "The global trade effects of the AI infrastructure boom (FEDS Notes, 2026-02-13)",
+  "publisher": "Federal Reserve Board",
+  "url": "https://www.federalreserve.gov/econres/notes/feds-notes/the-global-trade-effects-of-the-ai-infrastructure-boom-20260213.html",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "census_c30_2026_09",
+  "name": "US Census construction spending (C30), data center category, September 2026 release (2026-11-02)",
+  "publisher": "US Census Bureau via FourWeekMBA",
+  "url": "https://fourweekmba.com/ai-us-data-center-construction-hit-a-record-96-5b-rate/",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "constructconnect_2026_09",
+  "name": "September 2026 Data Center Report: YTD spending nearly 3x a year ago",
+  "publisher": "ConstructConnect",
+  "url": "https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "loudoun_pause",
+  "name": "Loudoun County board votes to pause new data center applications (2026-09-18)",
+  "publisher": "Baxtel",
+  "url": "https://baxtel.com/news/loudoun-county-board-votes-to-pause-new-data-center-applications",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "dominion_q2_2026",
+  "name": "Dominion Energy Q2 2026 earnings call highlights (2026-07-31)",
+  "publisher": "Nasdaq",
+  "url": "https://www.nasdaq.com/articles/dominion-energy-q2-earnings-call-highlights",
+  "type": "earnings_call",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "southern_q2_2026",
+  "name": "Southern Co. contracted large load reaches 17 GW (2026-08-04)",
+  "publisher": "Utility Dive",
+  "url": "https://www.utilitydive.com/news/southern-co-contracted-large-load-data-centers/826919/",
+  "type": "earnings_call",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "gpc_q3_2025_large_load",
+  "name": "Georgia Power Q3 2025 large load report to Georgia PSC (2025-11-24)",
+  "publisher": "Utility Dive",
+  "url": "https://www.utilitydive.com/news/georgia-power-large-load-data-centers/806300/",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "miso_2026_forecast",
+  "name": "MISO long-range load forecast (workshop 2026-04-13)",
+  "publisher": "Utility Dive",
+  "url": "https://www.utilitydive.com/news/miso-long-range-forecast-data-center/817917/",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "rto_large_load_survey",
+  "name": "RTOs and ISOs answer: how all six grid operators plan to respond to the large load surge (2026-07)",
+  "publisher": "Climate Solutions Law (Sheppard Mullin)",
+  "url": "https://www.climatesolutionslaw.com/2026/07/rtos-and-isos-answer-a-national-preview-of-how-all-six-grid-operators-plan-to-respond-to-the-large-load-surge/",
+  "type": "report",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "tnb_dc_2026",
+  "name": "TNB locks in growth securing 59 data centre projects with 8.3GW capacity (2026-07-11)",
+  "publisher": "Business Today Malaysia",
+  "url": "https://www.businesstoday.com.my/2026/07/11/tnb-locks-in-growth-securing-59-data-centre-projects-with-8-3gw-capacity/",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "cso_ireland_2025",
+  "name": "Data centres account for almost a quarter of Irish electricity usage in 2025 (CSO data, 2026-07-07)",
+  "publisher": "Irish Times",
+  "url": "https://www.irishtimes.com/business/2026/07/07/data-centres-account-for-almost-one-quarter-of-irish-electricity-usage-in-2025/",
+  "type": "alt_data",
+  "accessed": "2026-11-19"
+ },
+ {
+  "source_id": "analyst_estimate",
+  "name": "Model assumption or derived estimate by this project (see METHODOLOGY.md)",
+  "publisher": "compute-modeling project",
+  "url": "",
+  "type": "estimate",
+  "accessed": "2026-11-19"
+ }
+]

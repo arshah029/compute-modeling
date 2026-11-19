@@ -1,0 +1,768 @@
+{
+ "version": "1.0",
+ "generated": "2026-11-19",
+ "placeholder": false,
+ "description": "Spend-driven model of global AI compute demand: capex -> accelerator spend -> H100-equivalents added -> installed base (with retirement) -> power and energy.",
+ "series": [
+  {
+   "name": "capex",
+   "label": "Global AI data center capex",
+   "unit": "USD_bn",
+   "points": [
+    {
+     "year": 2025,
+     "low": 550,
+     "base": 550,
+     "high": 550
+    },
+    {
+     "year": 2026,
+     "low": 900,
+     "base": 1000,
+     "high": 1100
+    },
+    {
+     "year": 2027,
+     "low": 900.0,
+     "base": 1150.0,
+     "high": 1430.0
+    },
+    {
+     "year": 2028,
+     "low": 900.0,
+     "base": 1322.5,
+     "high": 1859.0
+    },
+    {
+     "year": 2029,
+     "low": 900.0,
+     "base": 1520.87,
+     "high": 2416.7
+    },
+    {
+     "year": 2030,
+     "low": 900.0,
+     "base": 1749.01,
+     "high": 3141.71
+    }
+   ]
+  },
+  {
+   "name": "accel_spend",
+   "label": "Spend on AI accelerators",
+   "unit": "USD_bn",
+   "points": [
+    {
+     "year": 2025,
+     "low": 220.0,
+     "base": 247.5,
+     "high": 275.0
+    },
+    {
+     "year": 2026,
+     "low": 360.0,
+     "base": 450.0,
+     "high": 550.0
+    },
+    {
+     "year": 2027,
+     "low": 360.0,
+     "base": 517.5,
+     "high": 715.0
+    },
+    {
+     "year": 2028,
+     "low": 360.0,
+     "base": 595.12,
+     "high": 929.5
+    },
+    {
+     "year": 2029,
+     "low": 360.0,
+     "base": 684.39,
+     "high": 1208.35
+    },
+    {
+     "year": 2030,
+     "low": 360.0,
+     "base": 787.05,
+     "high": 1570.86
+    }
+   ]
+  },
+  {
+   "name": "additions",
+   "label": "AI compute added per year",
+   "unit": "H100e_m",
+   "points": [
+    {
+     "year": 2024,
+     "low": 4.7,
+     "base": 4.7,
+     "high": 4.7
+    },
+    {
+     "year": 2025,
+     "low": 10.48,
+     "base": 11.79,
+     "high": 13.1
+    },
+    {
+     "year": 2026,
+     "low": 20.17,
+     "base": 26.79,
+     "high": 34.92
+    },
+    {
+     "year": 2027,
+     "low": 23.73,
+     "base": 38.5,
+     "high": 60.53
+    },
+    {
+     "year": 2028,
+     "low": 27.91,
+     "base": 55.35,
+     "high": 104.92
+    },
+    {
+     "year": 2029,
+     "low": 32.84,
+     "base": 79.57,
+     "high": 181.86
+    },
+    {
+     "year": 2030,
+     "low": 38.64,
+     "base": 114.38,
+     "high": 315.22
+    }
+   ]
+  },
+  {
+   "name": "stock",
+   "label": "Installed AI compute",
+   "unit": "H100e_m",
+   "points": [
+    {
+     "year": 2024,
+     "low": 6.5,
+     "base": 6.5,
+     "high": 6.5
+    },
+    {
+     "year": 2025,
+     "low": 16.88,
+     "base": 18.19,
+     "high": 19.5
+    },
+    {
+     "year": 2026,
+     "low": 36.89,
+     "base": 44.82,
+     "high": 54.27
+    },
+    {
+     "year": 2027,
+     "low": 60.37,
+     "base": 83.08,
+     "high": 114.54
+    },
+    {
+     "year": 2028,
+     "low": 86.99,
+     "base": 137.13,
+     "high": 218.16
+    },
+    {
+     "year": 2029,
+     "low": 115.13,
+     "base": 211.99,
+     "high": 395.32
+    },
+    {
+     "year": 2030,
+     "low": 143.29,
+     "base": 314.58,
+     "high": 697.44
+    }
+   ]
+  },
+  {
+   "name": "inference_stock",
+   "label": "Installed AI compute used for inference",
+   "unit": "H100e_m",
+   "points": [
+    {
+     "year": 2024,
+     "low": 2.6,
+     "base": 2.6,
+     "high": 2.6
+    },
+    {
+     "year": 2025,
+     "low": 7.59,
+     "base": 8.18,
+     "high": 8.77
+    },
+    {
+     "year": 2026,
+     "low": 18.45,
+     "base": 22.41,
+     "high": 27.13
+    },
+    {
+     "year": 2027,
+     "low": 33.2,
+     "base": 45.69,
+     "high": 63.0
+    },
+    {
+     "year": 2028,
+     "low": 52.19,
+     "base": 82.28,
+     "high": 130.9
+    },
+    {
+     "year": 2029,
+     "low": 74.83,
+     "base": 137.79,
+     "high": 256.96
+    },
+    {
+     "year": 2030,
+     "low": 100.3,
+     "base": 220.21,
+     "high": 488.21
+    }
+   ]
+  },
+  {
+   "name": "training_stock",
+   "label": "Installed AI compute used for training",
+   "unit": "H100e_m",
+   "points": [
+    {
+     "year": 2024,
+     "low": 3.9,
+     "base": 3.9,
+     "high": 3.9
+    },
+    {
+     "year": 2025,
+     "low": 9.28,
+     "base": 10.0,
+     "high": 10.72
+    },
+    {
+     "year": 2026,
+     "low": 18.45,
+     "base": 22.41,
+     "high": 27.13
+    },
+    {
+     "year": 2027,
+     "low": 27.17,
+     "base": 37.38,
+     "high": 51.55
+    },
+    {
+     "year": 2028,
+     "low": 34.79,
+     "base": 54.85,
+     "high": 87.26
+    },
+    {
+     "year": 2029,
+     "low": 40.29,
+     "base": 74.2,
+     "high": 138.36
+    },
+    {
+     "year": 2030,
+     "low": 42.99,
+     "base": 94.37,
+     "high": 209.23
+    }
+   ]
+  },
+  {
+   "name": "zettaflops",
+   "label": "Installed AI compute (peak dense BF16)",
+   "unit": "zettaFLOP_s",
+   "points": [
+    {
+     "year": 2024,
+     "low": 6.43,
+     "base": 6.43,
+     "high": 6.43
+    },
+    {
+     "year": 2025,
+     "low": 16.69,
+     "base": 17.99,
+     "high": 19.28
+    },
+    {
+     "year": 2026,
+     "low": 36.49,
+     "base": 44.33,
+     "high": 53.67
+    },
+    {
+     "year": 2027,
+     "low": 59.71,
+     "base": 82.16,
+     "high": 113.28
+    },
+    {
+     "year": 2028,
+     "low": 86.03,
+     "base": 135.62,
+     "high": 215.76
+    },
+    {
+     "year": 2029,
+     "low": 113.86,
+     "base": 209.66,
+     "high": 390.97
+    },
+    {
+     "year": 2030,
+     "low": 141.71,
+     "base": 311.12,
+     "high": 689.77
+    }
+   ]
+  },
+  {
+   "name": "it_gw",
+   "label": "AI IT power capacity",
+   "unit": "GW",
+   "points": [
+    {
+     "year": 2024,
+     "low": 8.87,
+     "base": 8.87,
+     "high": 8.87
+    },
+    {
+     "year": 2025,
+     "low": 17.11,
+     "base": 18.15,
+     "high": 19.2
+    },
+    {
+     "year": 2026,
+     "low": 28.19,
+     "base": 34.02,
+     "high": 41.34
+    },
+    {
+     "year": 2027,
+     "low": 37.14,
+     "base": 50.99,
+     "high": 71.98
+    },
+    {
+     "year": 2028,
+     "low": 42.98,
+     "base": 67.85,
+     "high": 113.14
+    },
+    {
+     "year": 2029,
+     "low": 42.94,
+     "base": 81.65,
+     "high": 166.38
+    },
+    {
+     "year": 2030,
+     "low": 39.76,
+     "base": 93.93,
+     "high": 238.54
+    }
+   ]
+  },
+  {
+   "name": "facility_gw",
+   "label": "AI data center power capacity (incl. cooling)",
+   "unit": "GW",
+   "points": [
+    {
+     "year": 2024,
+     "low": 11.08,
+     "base": 11.08,
+     "high": 11.08
+    },
+    {
+     "year": 2025,
+     "low": 21.38,
+     "base": 22.69,
+     "high": 24.0
+    },
+    {
+     "year": 2026,
+     "low": 35.24,
+     "base": 42.52,
+     "high": 51.68
+    },
+    {
+     "year": 2027,
+     "low": 46.43,
+     "base": 63.74,
+     "high": 89.98
+    },
+    {
+     "year": 2028,
+     "low": 53.73,
+     "base": 84.82,
+     "high": 141.42
+    },
+    {
+     "year": 2029,
+     "low": 53.68,
+     "base": 102.06,
+     "high": 207.98
+    },
+    {
+     "year": 2030,
+     "low": 49.7,
+     "base": 117.42,
+     "high": 298.17
+    }
+   ]
+  },
+  {
+   "name": "energy_twh",
+   "label": "AI data center electricity use",
+   "unit": "TWh",
+   "points": [
+    {
+     "year": 2024,
+     "low": 53.39,
+     "base": 63.1,
+     "high": 72.8
+    },
+    {
+     "year": 2025,
+     "low": 103.02,
+     "base": 129.21,
+     "high": 157.69
+    },
+    {
+     "year": 2026,
+     "low": 169.77,
+     "base": 242.1,
+     "high": 339.51
+    },
+    {
+     "year": 2027,
+     "low": 223.68,
+     "base": 362.94,
+     "high": 591.15
+    },
+    {
+     "year": 2028,
+     "low": 258.85,
+     "base": 482.94,
+     "high": 929.12
+    },
+    {
+     "year": 2029,
+     "low": 258.63,
+     "base": 581.13,
+     "high": 1366.4
+    },
+    {
+     "year": 2030,
+     "low": 239.44,
+     "base": 668.57,
+     "high": 1958.99
+    }
+   ]
+  }
+ ],
+ "assumptions": [
+  {
+   "key": "ai_capex_usd_bn_2025",
+   "label": "Global AI data center capex, 2025",
+   "value": 550,
+   "low": 480,
+   "high": 650,
+   "unit": "USD_bn",
+   "description": "All AI/cloud data center capex worldwide in 2025. Big 4 hyperscalers were $376bn; add Oracle (~$40bn CY), China big tech (~$60bn), neoclouds, labs, sovereign and enterprise (~$75bn).",
+   "source_ids": [
+    "capex_tracker",
+    "orcl_10q_fy27q1",
+    "tencent_2026q1",
+    "analyst_estimate"
+   ]
+  },
+  {
+   "key": "ai_capex_usd_bn_2026",
+   "label": "Global AI data center capex, 2026",
+   "value": 1000,
+   "low": 900,
+   "high": 1100,
+   "unit": "USD_bn",
+   "description": "2026 is largely known from guidance: Big 4 ~$730bn (MSFT ~170, GOOGL 195-205, AMZN ~220, META 135-145) plus Oracle, China and others.",
+   "source_ids": [
+    "msft_call_fy27q1",
+    "googl_call_2026q3",
+    "amzn_pr_2026q3",
+    "meta_pr_2026q3",
+    "analyst_estimate"
+   ]
+  },
+  {
+   "key": "capex_growth_pct",
+   "label": "Capex growth per year after 2026",
+   "value": 15,
+   "low": 0,
+   "high": 30,
+   "unit": "pct",
+   "description": "Annual growth in global AI capex from 2027. TSMC's mid-to-high-50s% AI accelerator CAGR (2024-29) implies ~25-35% late-decade growth; financing and power limits argue lower.",
+   "source_ids": [
+    "tsmc_2026q3",
+    "analyst_estimate"
+   ]
+  },
+  {
+   "key": "accel_share_of_capex_pct",
+   "label": "Share of capex spent on accelerators",
+   "value": 45,
+   "low": 35,
+   "high": 55,
+   "unit": "pct",
+   "description": "Fraction of capex going to AI accelerators and attached networking. Calibrated: CY2025 NVIDIA DC revenue ~$194bn plus AMD/TPU/Trainium/others ~$55bn is ~45% of $550bn.",
+   "source_ids": [
+    "nvda_ir",
+    "amd_8k_2026q3",
+    "analyst_estimate"
+   ]
+  },
+  {
+   "key": "avg_accel_price_usd_k",
+   "label": "Cost per H100-equivalent, 2025",
+   "value": 21,
+   "low": 17,
+   "high": 26,
+   "unit": "USD_k",
+   "description": "All-in spend per H100-equivalent of compute added in 2025 (chip + networking). Calibrated so 2025 spend matches Epoch AI's ~11-12M H100e added in 2025.",
+   "source_ids": [
+    "epoch_additions",
+    "analyst_estimate"
+   ]
+  },
+  {
+   "key": "price_decline_pct",
+   "label": "Annual decline in cost per H100e",
+   "value": 20,
+   "low": 10,
+   "high": 30,
+   "unit": "pct",
+   "description": "Price-performance improvement per year for new accelerators (Blackwell to Rubin roadmap).",
+   "source_ids": [
+    "analyst_estimate"
+   ]
+  },
+  {
+   "key": "watts_per_accel",
+   "label": "IT power per H100e, 2025 vintage",
+   "value": 800,
+   "low": 600,
+   "high": 1000,
+   "unit": "W",
+   "description": "Server-level IT power per H100-equivalent for chips installed in 2025 (DGX B200 ~14.3 kW for 8 GPUs at ~2.25x H100 FLOPs, plus ~10% cluster networking/storage). 2024 vintage ~1,350 W, older ~1,400 W.",
+   "source_ids": [
+    "nvidia_specs",
+    "analyst_estimate"
+   ]
+  },
+  {
+   "key": "perf_per_watt_gain_pct",
+   "label": "Annual efficiency gain per vintage",
+   "value": 25,
+   "low": 15,
+   "high": 35,
+   "unit": "pct",
+   "description": "Yearly drop in watts per H100e for each new vintage.",
+   "source_ids": [
+    "nvidia_specs",
+    "analyst_estimate"
+   ]
+  },
+  {
+   "key": "pue",
+   "label": "Power usage effectiveness",
+   "value": 1.25,
+   "low": 1.1,
+   "high": 1.4,
+   "unit": "ratio",
+   "description": "Facility power divided by IT power for AI data centers (liquid-cooled new builds ~1.1-1.2; fleet average higher).",
+   "source_ids": [
+    "lbnl_2024",
+    "iea_energy_ai"
+   ]
+  },
+  {
+   "key": "utilization_pct",
+   "label": "Average power draw vs nameplate",
+   "value": 65,
+   "low": 50,
+   "high": 80,
+   "unit": "pct",
+   "description": "Average IT draw as a share of nameplate, used to turn capacity (GW) into energy (TWh).",
+   "source_ids": [
+    "lbnl_2024",
+    "analyst_estimate"
+   ]
+  },
+  {
+   "key": "inference_share_pct",
+   "label": "Inference share of compute, 2025",
+   "value": 45,
+   "low": 35,
+   "high": 55,
+   "unit": "pct",
+   "description": "Share of installed AI compute used for inference (vs training) in 2025.",
+   "source_ids": [
+    "analyst_estimate"
+   ]
+  },
+  {
+   "key": "inference_share_gain_pp",
+   "label": "Inference share gain per year",
+   "value": 5,
+   "low": 2,
+   "high": 8,
+   "unit": "pp",
+   "description": "Percentage-point increase in inference share each year, capped at 85%.",
+   "source_ids": [
+    "analyst_estimate"
+   ]
+  },
+  {
+   "key": "accel_lifetime_years",
+   "label": "Accelerator service life",
+   "value": 5,
+   "low": 4,
+   "high": 6,
+   "unit": "years",
+   "description": "Years before a vintage is retired from the installed base.",
+   "source_ids": [
+    "analyst_estimate"
+   ]
+  }
+ ],
+ "scenarios": {
+  "low": {
+   "ai_capex_usd_bn_2025": 550,
+   "ai_capex_usd_bn_2026": 900,
+   "capex_growth_pct": 0,
+   "accel_share_of_capex_pct": 40,
+   "avg_accel_price_usd_k": 21,
+   "price_decline_pct": 15,
+   "watts_per_accel": 800,
+   "perf_per_watt_gain_pct": 30,
+   "pue": 1.25,
+   "utilization_pct": 55,
+   "inference_share_pct": 45,
+   "inference_share_gain_pp": 5,
+   "accel_lifetime_years": 5
+  },
+  "base": {
+   "ai_capex_usd_bn_2025": 550,
+   "ai_capex_usd_bn_2026": 1000,
+   "capex_growth_pct": 15,
+   "accel_share_of_capex_pct": 45,
+   "avg_accel_price_usd_k": 21,
+   "price_decline_pct": 20,
+   "watts_per_accel": 800,
+   "perf_per_watt_gain_pct": 25,
+   "pue": 1.25,
+   "utilization_pct": 65,
+   "inference_share_pct": 45,
+   "inference_share_gain_pp": 5,
+   "accel_lifetime_years": 5
+  },
+  "high": {
+   "ai_capex_usd_bn_2025": 550,
+   "ai_capex_usd_bn_2026": 1100,
+   "capex_growth_pct": 30,
+   "accel_share_of_capex_pct": 50,
+   "avg_accel_price_usd_k": 21,
+   "price_decline_pct": 25,
+   "watts_per_accel": 800,
+   "perf_per_watt_gain_pct": 20,
+   "pue": 1.25,
+   "utilization_pct": 75,
+   "inference_share_pct": 45,
+   "inference_share_gain_pp": 5,
+   "accel_lifetime_years": 5
+  }
+ },
+ "history": {
+  "additions_h100e_m": {
+   "2020": 0.1,
+   "2021": 0.15,
+   "2022": 0.25,
+   "2023": 1.3,
+   "2024": 4.7
+  },
+  "watts_per_h100e": {
+   "2020": 1400,
+   "2021": 1400,
+   "2022": 1400,
+   "2023": 1400,
+   "2024": 1350
+  }
+ },
+ "formula": [
+  "capex[2025]=ai_capex_usd_bn_2025; capex[2026]=ai_capex_usd_bn_2026; capex[y>2026]=capex[2026]*(1+capex_growth_pct/100)^(y-2026)",
+  "accel_spend[y]=capex[y]*accel_share_of_capex_pct/100",
+  "price[y]=avg_accel_price_usd_k*(1-price_decline_pct/100)^(y-2025)  (USD k per H100e)",
+  "additions[y] (millions H100e)=accel_spend[y]/price[y]; years<=2024 from history.additions_h100e_m",
+  "watts[y]=watts_per_accel*(1-perf_per_watt_gain_pct/100)^(y-2025); years<=2024 from history.watts_per_h100e",
+  "stock[y]=sum of additions[v] for v in (y-accel_lifetime_years, y]",
+  "it_gw[y]=sum(additions[v]*watts[v])/1000 over live vintages; facility_gw=it_gw*pue",
+  "energy_twh[y]=facility_gw*utilization_pct/100*8.76",
+  "inference share[y]=min(85, inference_share_pct+inference_share_gain_pp*(y-2025))",
+  "zettaflops=stock*1e6*989e12/1e21 (H100 dense BF16)"
+ ],
+ "benchmarks": [
+  {
+   "label": "Epoch AI: installed AI compute, Jan 2026",
+   "value": 15.0,
+   "unit": "H100e_m",
+   "year": 2025,
+   "series": "stock",
+   "source_id": "epoch_chip_owners"
+  },
+  {
+   "label": "Epoch AI: power for installed AI chips, Jan 2026",
+   "value": 10.0,
+   "unit": "GW",
+   "year": 2025,
+   "series": "it_gw",
+   "source_id": "epoch_chip_owners"
+  },
+  {
+   "label": "IEA: all data centres, 2024",
+   "value": 415,
+   "unit": "TWh",
+   "year": 2024,
+   "series": "energy_twh",
+   "source_id": "iea_energy_ai"
+  },
+  {
+   "label": "IEA Base Case: all data centres, 2030",
+   "value": 945,
+   "unit": "TWh",
+   "year": 2030,
+   "series": "energy_twh",
+   "source_id": "iea_energy_ai"
+  }
+ ]
+}
